@@ -50,5 +50,5 @@ h1 {
     width: 30%; /* Adjust as needed */
     margin: 0 auto; /* Center horizontally */
     border: none; /* Remove default border */
-    border-top: 2px solid #333; /* Add a custom border */
+    border-top: 1px solid #333; /* Add a custom border */
 }
