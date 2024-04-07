@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Shelton - Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.6/minireset.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        a {
+            color: #FF0000; /* Red color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Logan Shelton</h1>
+    <hr>
+    <!-- Include the navbar -->
+    <div class="navbar-container"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('assets/utility/navbar.html')
+                .then(response => response.text())
+                .then(navbarContent => {
+                    document.querySelector('.navbar-container').innerHTML = navbarContent;
+                });
+        });
+    </script>
+    <div class="experience">
+        <h2>Experience</h2>
+        <p>View my <a href="https://www.linkedin.com/in/logansheltongde">LinkedIn profile</a></p>
+        <button onclick="downloadFile()">Download Resume</button>
+
+        <script>
+            function downloadFile() {
+                const fileUrl = 'assets/files/LShelton-Resume.pdf';
+                const fileName = 'LShelton-Resume.pdf';
+                const link = document.createElement('a');
+                link.href = fileUrl;
+                link.download = fileName;
+                link.click();
+            }
+        </script>
+        <p>
+            <strong><span style="color: green;">Sr Software Engineer II, Builds</span></strong><br>
+            <em>Ubisoft</em> | San Francisco, CA - Hybrid/Remote<br>
+            <span>November 2023 - Present</span><br>
+            <hr>
+        </p>
+        <p>
+            <strong><span style="color: green;">Staff Build & Release Manager - R&D</span></strong><br>
+            <em>Cryptic Studios</em> | Los Gatos, CA - Remote<br>
+            <span>September 2022 - November 2023</span><br>
+            <hr>
+            <ul>
+                <li>Unreal Engine 5.0-5.3 (UE5) UAT, UBT</li>
+                <li>Manage integrations from Epic or to the release streams</li>
+                <li>Manage studio divergences in Epic Games code base</li>
+                <li>UnrealGameSync customized utility added using C#</li>
+                <li>Added symboling for Unreal Engine builds</li>
+                <li>Implemented platform builds for all supported platforms early to catch issues sooner</li>
+                <li>Perforce team management, support, and education</li>
+                <li>Onboarding documentation maintained to reduce onboarding questions</li>
+                <li>Created a Python tool which supports P4 and builds/deployments</li>
+                <li>Migrated the team from an in-house builder system to Jenkins</li>
+                <li>Set up customized Jenkins scripts, plugins, and security</li>
+                <li>Write customized automated tools to test things like bootflow, soak test, etc</li>
+                <li>Manage the technology integrations between Cryptic & Gearbox Software</li>
+                <li>Hooked up AWS VMs with Jenkins</li>
+                <li>Write SharedLibraries in Jenkins utilizing Groovy</li>
+                <li>Write customized emails using Groovy, HTML, Java, and Jenkins</li>
+                <li>Assist the Lead Producer in handling the release timeline for external and internal playtest</li>
+                <li>Implemented Patching & Archiving systems for Unreal Engine</li>
+            </ul>            
+        </p>
+        <p>
+            <strong><span style="color: green;">Software Engineer II, Builds</span></strong><br>
+            <em>EA - Full Circle</em> | Vancouver, Canada - Remote<br>
+            <span>September 2022 - November 2023</span><br>
+            <hr>
+            <ul>
+                <li>Manage and improve several Python scripts which handle continuous integrations</li>
+                <li>Debug C++, C#, and Python to quickly implement fixes to maintain a green farm</li>
+                <li>Implement patching and archiving infrastructure for skate.</li>
+                <li>Work directly with QA and production to prepare releases</li>
+                <li>Implement a branching strategy that allows growth for the game as a live service</li>
+                <li>Manage integrations to and from the game engine</li>
+                <li>Managed to get Full Circle to work directly off head of Frostbite</li>
+                <li>Manage over 50+ VMs - escalate, debug, or report failures to maintain a green farm</li>
+                <li>Implemented a "claim" program on the build farm to claim build failures</li>
+                <li>Debug internal tools which work to distribute builds and editors to the game team</li>
+                <li>Create several branchspecs to allow a flexible branch within Perforce</li>
+                <li>Manage cherry picks between the team, engine, or releases</li>
+                <li>Managed data upgrading from Frostbite</li>
+                <li>Manage and track divergences between Full Circle and Frostbite</li>
+                <li>Created automation processes for Full Circle to block integrations due to failures</li>
+            </ul>                      
+        </p>
+        <p>
+            <strong><span style="color: green;">Release Manager III</span></strong><br>
+            <em>Cryptic Studios</em> | Los Gatos, CA - Remote<br>
+            <span>May 2020 - July 2021</span><br>
+            <hr>
+            <ul>
+                <b>Shipped Magic Legends (Windows, PS4, PS5, XSX, XB1)</b>
+                <li>The Ability to say "No"</li>
+                <li>Developing a new release pipeline using the in-house tools to ensure better quality releases</li>
+                <li>Created several Python tools to automate dependency checking, and check-in files, and handle merges</li>
+                <li>Managing the release cycle of PAX, Closed Alpha's, Open Beta, minor and major releases as well as hotfixes</li>
+                <li>Managing Cryptic's in-house version control software to ensure the items being checked-in are for the correct releases</li>
+                <li>Managing the in-house builders to ensure they never go offline and remain stable to constantly create builds & packages</li>
+                <li>Debug code changes that break the builder by digging through their call stack and finding the responsible engineer for the breakage</li>
+                <li>Developed a Live Run Book for Magic Legends as we headed toward launch to give hotfix criteria </li>
+                <li> Drive NetOps/Development team toward solutions, patches, and releases for live issues</li>
+                <li>Creating release plans for all releases and hotfixes throughout the year by collaborating with leadership</li>
+                <li>Communicating release plans, requirements, and risk for discussion with key stakeholders</li>
+                <li>Run leadership triages to move items that cannot fit the scheduler / isn't important to the release.</li>
+                <li>Facilitating submission processes with the LiveOps team to deploy our builds to our live environment</li>
+                <li>Managing punchlist, jiras, and jira dashboards for Magic Legends team</li>
+                <li>Creating and managing microtransactions</li>
+                <li>Hotfix any microtransaction issues </li>
+                <li>Help drive new ideas and changes to the builder system, including driving engineers to create new tools, or additional infrastructure needs for builders</li>
+                <li>Interact with the community and bring forth community issues to the leadership team on potential hotfix candidates</li>
+                <li>Helping release the game on Xbox One, Playstation 4, Xbox X, and Playstation 5</li>
+                <li>Handling all code and data merges, branches, and reverts for the Magic team</li>
+                <li>Handling production responsibilities for localization</li>
+            </ul>                      
+        </p>
+        <p>
+            <strong><span style="color: green;">Release Manager II</span></strong><br>
+            <em>Cryptic Studios</em> | Los Gatos, CA - Remote<br>
+            <span>December 2019 - May 2020</span><br>
+            <hr>
+            <ul>
+                <b>Shipped Star Trek Online 10th anniversary</b>
+                <li>Worked on Star Trek Online to ship the 10th year anniversary with hundreds of bug fixes, and new content</li>
+                <li>Developed improvements to the existing tools, as well as designed new ones</li>
+                <li>Transferred to the Magic Legends team and worked on PAX and Closed Alpha releases</li>
+            </ul>                      
+        </p>
+        <!-- Repeat the above block for each experience entry -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Shelton</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.6/minireset.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        p {
+            max-width: 600px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Add border to the image */
+        .profile-image {
+            border: 2px solid #333;
+            border-radius: 50%;
+            max-width: 200px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Logan Shelton</h1>
+    <hr>
+    <!-- Include the navbar -->
+    <div class="navbar-container"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('assets/utility/navbar.html')
+                .then(response => response.text())
+                .then(navbarContent => {
+                    document.querySelector('.navbar-container').innerHTML = navbarContent;
+                });
+        });
+    </script>
+    <p>
+        <img src="assets/photos/lshelton-self.jpg" alt="Logan Shelton" class="profile-image">
+        Welcome to my Portfolio!<br>
+        With over 5 years of professional industry experience as a seasoned Build & Release Manager, boasting a successful track record of shipping 2 games, I specialize in Python, C++, and Perforce.<br><br>
+        I'm passionate about crafting efficient software pipelines, I've contributed to titles such as <b><u>XDefiant, skate., Magic: Legends, Star Trek Online, Command & Conquer: Rivals, and Tip Toe</u></b>. 
+        <br><br>Beyond tools, my expertise encompasses adaptability, allowing me to excel in any environment. Leveraging extensive knowledge, I contribute to learning and enhancing in-house tools. Confronted with new challenges, my sharp debugging skills come into play, enabling me to identify issues and craft effective solutions.
+    </p>
+</body>
+</html>

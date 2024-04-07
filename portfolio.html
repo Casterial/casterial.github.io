@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Shelton - Experience</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.6/minireset.min.css">
+
+</head>
+<body>
+    <h1>Logan Shelton</h1>
+    <hr>
+    <!-- Include the navbar -->
+    <div class="navbar-container"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('assets/utility/navbar.html')
+                .then(response => response.text())
+                .then(navbarContent => {
+                    document.querySelector('.navbar-container').innerHTML = navbarContent;
+                });
+        });
+    </script>
+
+    <div class="xDefiant_Game"></div>
+        <p>
+            <h2><span style="color: green;">XDefiant (2023-present) </span></h2><br>
+            <hr class="small-hr">
+            <br><em>Role:</em> | Sr Software Engineer II, Builds & DevOps<br>
+        </p>
+
+        <p>TRAILER</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VUv3ug_uHkE?si=hfXhWjAXakF2-dbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="Unreleased_UE"></div>
+        <p>
+            <h2><span style="color: green;">Unrealsed UE5.3 Game (Cryptic Studios, 2022-2023) </span></h2><br>     
+            <hr class="small-hr">
+            <br><em>Role:</em> | Staff Build & Release Manager II<br>
+        </p>
+
+        <p>TRAILER</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EM1SlNwBUIo?si=T7GkNZzS3bpRlW96" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="skate"></div>
+        <p>
+            <h2><span style="color: green;">skate. (2021-2022) </span></h2><br>
+            <hr class="small-hr">
+            <br><em>Role:</em> | Software Engineer II, Builds<br>
+        </p>
+
+        <p>TRAILER</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2XddTE08rI?si=s4GDSc7ctgsqKrdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="Magic_Legends"></div>
+        <p>
+            <h2><span style="color: green;">Magic Legends (2019-2021) </span></h2><br> 
+            <hr class="small-hr">
+            <br><em>Role:</em> | Release Manager III<br>
+        </p>
+
+        <p>TRAILER</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vpv82KkfX8c?si=j3rXGt_JtLvZC_KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="Command_Conquer"></div>
+        <p>
+            <h2><span style="color: green;">Command & Conquer: Rivals (2018-2019)</span></h2><br>    
+            <hr class="small-hr">
+            <br><em>Role:</em> | Gameplay Engineer, Assistant (Balance Team)<br>
+        </p>
+
+        <div class="image-container">
+            <div class="image">
+                <a href="assets/files/command-n-conquer/game_cap_1.png" class="image-link">
+                    <img src="assets/files/command-n-conquer/game_cap_1.png" alt="Game Capture 1" style="max-width: 20%; border: 2px solid #333;">
+                </a>
+            </div>
+            <div class="image">
+                <a href="assets/files/command-n-conquer/game_cap_2.png" class="image-link">
+                    <img src="assets/files/command-n-conquer/game_cap_2.png" alt="Game Capture 2" style="max-width: 20%; border: 2px solid #333;">
+                </a>
+            </div>
+        </div>
+        <p>TRAILER</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0gc3YXKWSgQ?si=93oKKbENkCGGMzz6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br><p>Gameplay Programming using C++ & Lua</p>
+        <div class="slider-container">
+            <!-- Slides will be dynamically generated here -->
+        </div>
+
+        <!-- Navigation buttons (previous and next) -->
+        <button class="prev" onclick="showSlide(-1)">Previous</button>
+        <button class="next" onclick="showSlide(1)">Next</button>
+
+        <script>
+            const imageUrls = [
+                'assets/files/command-n-conquer/gif_gc1 (1).gif',
+                'assets/files/command-n-conquer/gif_gc1 (2).gif',
+                'assets/files/command-n-conquer/gif_gc1 (3).gif',
+                'assets/files/command-n-conquer/gif_gc1 (4).gif',
+                'assets/files/command-n-conquer/gif_gc1 (5).gif',
+                'assets/files/command-n-conquer/gif_gc1 (6).gif',
+                'assets/files/command-n-conquer/gif_gc1 (7).gif',
+                'assets/files/command-n-conquer/gif_gc1 (8).gif',
+                'assets/files/command-n-conquer/gif_gc1 (9).gif',
+                'assets/files/command-n-conquer/gif_gc1 (10).gif',
+                'assets/files/command-n-conquer/gif_gc1 (11).gif',
+                'assets/files/command-n-conquer/gif_gc1 (12).gif',
+                'assets/files/command-n-conquer/gif_gc1 (13).gif',
+            ];
+
+            let currentSlide = 0;
+            const sliderContainer = document.querySelector('.slider-container');
+
+            function showSlide(n) {
+                currentSlide = (currentSlide + n + imageUrls.length) % imageUrls.length;
+                sliderContainer.innerHTML = `<div class="slide"><img src="${imageUrls[currentSlide]}" alt="Image ${currentSlide + 1}"></div>`;
+            }
+            // Show the initial slide
+            showSlide(0);
+        </script>
+    </div>
+</body>
+</html>
