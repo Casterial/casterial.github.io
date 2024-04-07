@@ -51,4 +51,5 @@ h1 {
     margin: 0 auto; /* Center horizontally */
     border: none; /* Remove default border */
     border-top: 1px solid #333; /* Add a custom border */
+    margin-top: 0.5em; /* Reduce the space between the word and the bar */
 }
